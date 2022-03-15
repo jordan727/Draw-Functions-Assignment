@@ -6,6 +6,7 @@ cnv.width = 800;
 cnv.height = 600;
 
 function drawSolidBall(x, y, color, number) {
+    // Draw a Solid Pool Ball with top-left corner (x, y) and with the given color and number
     fill(color)
     circle(x, y, 40, "fill");
     fill("white");
@@ -16,6 +17,7 @@ function drawSolidBall(x, y, color, number) {
 }
 
 function drawFish(x, y, size, color) {
+    // Draw a Fish with the top-left corner (x, y) and with the given color
     fill(color);
     triangle(x + 5, y + 0, x + 5, y + size, x + 50, y + size / 2, "fill");
     ellipse(x + 80, y + size / 2, 40, size / 3, 0, "fill");
